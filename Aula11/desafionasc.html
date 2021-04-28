@@ -19,7 +19,7 @@
             var chec_nasc = document.getElementById('chec_nasc')
             
             res.innerHTML = `<p> você nasceu em ${chec_nasc.value}`
-            if (chec_nasc.value == "BRASIL") {
+            if (chec_nasc.value.toUpperCase() == "BRASIL") {
                 res.innerHTML += `<p>Você é brasileiro!<p/>`
                 
             } else {
