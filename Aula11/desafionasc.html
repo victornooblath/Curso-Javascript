@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checar nacionalidade</title>
+</head>
+<body>
+    <h1>Checagem de nacionalidade</h1>
+    <input type="text" placeholder="Qual país você nasceu?" name="chec_nasc" id="chec_nasc">
+    <input type="button" value="Checar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar() {
+            var res = document.getElementById('res')
+            var chec_nasc = document.getElementById('chec_nasc')
+            
+            res.innerHTML = `<p> você nasceu em ${chec_nasc.value}`
+            if (chec_nasc.value == "BRASIL") {
+                res.innerHTML += `<p>Você é brasileiro!<p/>`
+                
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!<p/>`
+            }
+        }
+    </script>
+</body>
+</html>
