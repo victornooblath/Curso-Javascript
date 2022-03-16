@@ -1,0 +1,38 @@
+<!--
+    *No desafio tem 3 campos: inicio,Fim e Passo 
+    *eu insiro um numero em inicio(em qual numero começa a contar), insiro o numero de fim(onde vai parar de contar) e insiro o numero de passos(quanto de incr)
+    *quando clico no botão contar, ele faz o calculo alterando o footer, ele quer mostrando os números em sequência com emojis
+    *se o campo de inicio e fim for nulo, mostre uma msg de erro que é impossivel/ bastava por required
+    *se o campo de passo for 0, o programa assume como 1
+
+   -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo do exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <form>
+            <div>Início:<input type="number" id="inicio" required/></div><br>
+            <div>Fim:<input type="number" id="fim" required/></div><br>
+            <div>Passo:<input type="number" id="passo" required/></div><br>
+            <input type="button" value="contar" onclick="contar()"></input></div><br><br>
+            <div id="msg">
+                Aqui vai a mensagem
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p> &copy; VictorNooblath </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
